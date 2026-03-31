@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athletes - Basketball Hub</title>
+    <meta name="description" content="Top basketball athletes like LeBron James, Steph Curry, and more.">
+    <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #FF8C00 0%, #FF4500 50%, #8B0000 100%);
+  min-height: 100vh;
+  color: white;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 3rem;
+  background: linear-gradient(45deg, #FFA500, #FFD700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 30px rgba(255, 165, 0, 0.8);
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-20px); }
+  60% { transform: translateY(-10px); }
+}
+
+.athletes-grid {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.athlete-card {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+  text-align: center;
+  transition: transform 0.3s ease;
+  border: 2px solid rgba(255, 140, 0, 0.3);
+}
+
+.athlete-card:hover {
+  transform: translateY(-10px);
+  border-color: #FFD700;
+}
+
+.image-placeholder {
+  width: 250px;
+  height: 300px;
+  background: linear-gradient(45deg, #333, #555);
+  margin: 0 auto 20px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  color: #ccc;
+  border: 3px dashed #FF8C00;
+  /* PLACE YOUR IMAGE HERE: Replace background with background-image: url('path/to/your-image.jpg'); 
+     and remove gradient/text. Adjust width/height as needed. For local images, place in same folder. */
+}
+
+.name {
+  font-size: 2rem;
+  color: #FFD700;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.stats {
+  font-size: 1rem;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .athletes-grid {
+    grid-template-columns: 1fr;
+  }
+  header h1 { font-size: 2rem; }
+}
+    </style>
+</head>
+<body>
+    <nav style="text-align: center; margin-bottom: 20px;">
+        <a href="Basketball.html" style="background: linear-gradient(45deg, #FF8C00, #FF4500); color: white; padding: 12px 24px; text-decoration: none; border-radius: 25px; font-weight: bold; box-shadow: 0 5px 15px rgba(255,140,0,0.4); transition: all 0.3s; display: inline-block;">← Back to Home</a>
+    </nav>
+    <header>
+        <h1>Top Basketball Athletes</h1>
+    </header>
+    <div class="athletes-grid">
+        <div class="athlete-card">
+            <div class="image-placeholder">LeBron James Image<br>Replace background-image</div>
+            <div class="name">LeBron James</div>
+            <div class="stats">Position: SF/PF<br>Team: LA Lakers<br>PPG Career: 27.1<br>4x NBA Champion, 4x MVP</div>
+        </div>
+        <div class="athlete-card">
+            <div class="image-placeholder">Steph Curry Image<br>Replace background-image</div>
+            <div class="name">Stephen Curry</div>
+            <div class="stats">Position: PG<br>Team: Golden State Warriors<br>3PT%: 42.6%<br>4x NBA Champion, 2x MVP, All-Time 3s Leader</div>
+        </div>
+        <div class="athlete-card">
+            <div class="image-placeholder">Kobe Bryant Image<br>Replace background-image</div>
+            <div class="name">Kobe Bryant</div>
+            <div class="stats">Position: SG<br>Retired: Lakers Legend<br>PPG Career: 25.0<br>5x NBA Champion, 1x MVP, 81-pt game</div>
+        </div>
+        <div class="athlete-card">
+            <div class="image-placeholder">Michael Jordan Image<br>Replace background-image</div>
+            <div class="name">Michael Jordan</div>
+            <div class="stats">Position: SG<br>PPG Career: 30.1<br>6x NBA Champion, 5x MVP<br>GOAT Debate Leader</div>
+        </div>
+        <div class="athlete-card">
+            <div class="image-placeholder">Kevin Durant Image<br>Replace background-image</div>
+            <div class="name">Kevin Durant</div>
+            <div class="stats">Position: SF<br>PPG Career: 27.3<br>2x NBA Champion, 1x MVP, 4x Scoring Champ</div>
+        </div>
+        <div class="athlete-card">
+            <div class="image-placeholder">Nikola Jokic Image<br>Replace background-image</div>
+            <div class="name">Nikola Jokic</div>
+            <div class="stats">Position: C<br>Team: Denver Nuggets<br>3x MVP<br>2023 NBA Champion, Triple-Double Machine</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Facts - Basketball Hub</title>
+    <meta name="description" content="Fun facts about basketball.">
+    <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #FF8C00 0%, #FF4500 50%, #8B0000 100%);
+  min-height: 100vh;
+  color: white;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+  height: calc(100vh - 40px);
+}
+
+.left, .middle, .right {
+  flex: 1;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+  overflow-y: auto;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  background: linear-gradient(45deg, #FFA500, #FFD700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+  grid-column: 1 / -1;
+}
+
+.left h2, .middle h2, .right h2 {
+  color: #FFD700;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.fact {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border-left: 5px solid #FF8C00;
+}
+
+.random-fact {
+  font-style: italic;
+  font-size: 1.3rem;
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+  background: linear-gradient(45deg, #FF8C00, #FF4500);
+  border-radius: 15px;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+  .left, .middle, .right {
+    height: auto;
+  }
+}
+    </style>
+</head>
+<body>
+    <nav style="text-align: center; margin-bottom: 20px;">
+        <a href="Basketball.html" style="background: linear-gradient(45deg, #FF8C00, #FF4500); color: white; padding: 12px 24px; text-decoration: none; border-radius: 25px; font-weight: bold; box-shadow: 0 5px 15px rgba(255,140,0,0.4); transition: all 0.3s; display: inline-block;">← Back to Home</a>
+    </nav>
+    <div class="container">
+        <div class="left">
+            <h1>Fun Facts</h1>
+            <h2>Quick Facts</h2>
+            <div class="fact">Basketball was invented in 1891 by James Naismith.</div>
+            <div class="fact">NBA game lasts 48 minutes (12 min quarters).</div>
+            <div class="fact">Basketball hoop is 10 feet high worldwide.</div>
+            <div class="fact">Averages 90-100 shots per game.</div>
+        </div>
+        <div class="middle">
+            <h2>Main Facts</h2>
+            <div class="fact">The first basketball had a soccer ball bottom sewn to peach basket.</div>
+            <div class="fact">NBA 3-point line is 23.75 ft (corner 22 ft).</div>
+            <div class="fact">Michael Jordan won 6 championships.</div>
+            <div class="fact">LeBron James has most playoff points ever.</div>
+            <div class="fact">Basketball in Olympics since 1936.</div>
+        </div>
+        <div class="right">
+            <h2>Records</h2>
+            <div class="fact">Most points in game: 100 by Wilt Chamberlain.</div>
+            <div class="fact">Longest winning streak: 33 by Lakers.</div>
+            <div class="fact">Most 3s in game: 14 by Klay Thompson.</div>
+            <div class="fact">Fastest 3-peat: Bulls 1991-93.</div>
+        </div>
+    </div>
+</body>
+</html>
