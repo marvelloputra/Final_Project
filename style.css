@@ -26,6 +26,10 @@
     text-shadow: 0 0 30px rgba(255, 165, 0, 0.8);
     margin-bottom: 30px;
     animation: bounce 2s infinite;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 20px;
+    
   }
   
   @keyframes bounce {
