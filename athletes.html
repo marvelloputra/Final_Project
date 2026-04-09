@@ -1,11 +1,12 @@
+```html
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Athletes - Basketball Hub</title>
-    <meta name="description" content="Top basketball athletes like LeBron James, Steph Curry, and more.">
-    <style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Athletes - Basketball Hub</title>
+
+<style>
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +14,7 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, sans-serif;
   background: linear-gradient(135deg, #FF8C00 0%, #FF4500 50%, #8B0000 100%);
   min-height: 100vh;
   color: white;
@@ -66,30 +67,43 @@ header h1 {
 .image-placeholder {
   width: 250px;
   height: 300px;
-  background: linear-gradient(45deg, #333, #555);
   margin: 0 auto 20px;
   border-radius: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.1rem;
-  color: #ccc;
-  border: 3px dashed #FF8C00;
- /*lebron https://e0.365dm.com/18/11/1600x900/lebron-james-los-angeles-lakers_4494714.jpg?20181121101236
-/*curry https://static.wikia.nocookie.net/nbafamily/images/2/20/Foot_Locker_Three_Point_Contest_2015_KowsR-oVIeGl.jpg/revision/latest?cb=20150401141929
-/*kobe https://www.accartbooks.com/app/uploads/books/9780789215109-04-1-600x785.jpg
-/*michael jordan https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREIgveFR8kFR5ubDxT8S45fdJr6tE_sK3Fow&s
-/*kevin durrant https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThq9hTSz-2pubS05K-Ggj-h2ZDtfzEpMekwA&s
-/* nikola jokic https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtfVcoCCvqYLgwBej-8YlfhYRjl5qsXG19ng&s
-  /* PLACE YOUR IMAGE HERE: Replace background with background-image: url('path/to/your-image.jpg'); 
-     and remove gradient/text. Adjust width/height as needed. For local images, place in same folder. */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 3px solid #FF8C00;
+}
+
+/* PLAYER IMAGES */
+.lebron {
+  background-image: url('https://e0.365dm.com/18/11/1600x900/lebron-james-los-angeles-lakers_4494714.jpg?20181121101236');
+}
+
+.curry {
+  background-image: url('https://static.wikia.nocookie.net/nbafamily/images/2/20/Foot_Locker_Three_Point_Contest_2015_KowsR-oVIeGl.jpg/revision/latest?cb=20150401141929');
+}
+
+.kobe {
+  background-image: url('https://www.accartbooks.com/app/uploads/books/9780789215109-04-1-600x785.jpg');
+}
+
+.jordan {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREIgveFR8kFR5ubDxT8S45fdJr6tE_sK3Fow&s');
+}
+
+.durant {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThq9hTSz-2pubS05K-Ggj-h2ZDtfzEpMekwA&s');
+}
+
+.jokic {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtfVcoCCvqYLgwBej-8YlfhYRjl5qsXG19ng&s');
 }
 
 .name {
   font-size: 2rem;
   color: #FFD700;
   margin-bottom: 10px;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
 .stats {
@@ -104,46 +118,70 @@ header h1 {
   }
   header h1 { font-size: 2rem; }
 }
-    </style>
+</style>
 </head>
+
 <body>
-    <nav style="text-align: center; margin-bottom: 20px;">
-        <a href="index.html" style="background: linear-gradient(45deg, #FF8C00, #FF4500); color: white; padding: 12px 24px; text-decoration: none; border-radius: 25px; font-weight: bold; box-shadow: 0 5px 15px rgba(255,140,0,0.4); transition: all 0.3s; display: inline-block;">← Back to Home</a>
-    </nav>
-    <header>
-        <h1>Top Basketball Athletes</h1>
-    </header>
-    <div class="athletes-grid">
-        <div class="athlete-card">
-            <div class="image-placeholder">LeBron James Image<br>Replace background-image</div>
-            <div class="name">LeBron James</div>
-            <div class="stats">Position: SF/PF<br>Team: LA Lakers<br>PPG Career: 27.1<br>4x NBA Champion, 4x MVP</div>
-        </div>
-        <div class="athlete-card">
-            <div class="image-placeholder">Steph Curry Image<br>Replace background-image</div>
-            <div class="name">Stephen Curry</div>
-            <div class="stats">Position: PG<br>Team: Golden State Warriors<br>3PT%: 42.6%<br>4x NBA Champion, 2x MVP, All-Time 3s Leader</div>
-        </div>
-        <div class="athlete-card">
-            <div class="image-placeholder">Kobe Bryant Image<br>Replace background-image</div>
-            <div class="name">Kobe Bryant</div>
-            <div class="stats">Position: SG<br>Retired: Lakers Legend<br>PPG Career: 25.0<br>5x NBA Champion, 1x MVP, 81-pt game</div>
-        </div>
-        <div class="athlete-card">
-            <div class="image-placeholder">Michael Jordan Image<br>Replace background-image</div>
-            <div class="name">Michael Jordan</div>
-            <div class="stats">Position: SG<br>PPG Career: 30.1<br>6x NBA Champion, 5x MVP<br>GOAT Debate Leader</div>
-        </div>
-        <div class="athlete-card">
-            <div class="image-placeholder">Kevin Durant Image<br>Replace background-image</div>
-            <div class="name">Kevin Durant</div>
-            <div class="stats">Position: SF<br>PPG Career: 27.3<br>2x NBA Champion, 1x MVP, 4x Scoring Champ</div>
-        </div>
-        <div class="athlete-card">
-            <div class="image-placeholder">Nikola Jokic Image<br>Replace background-image</div>
-            <div class="name">Nikola Jokic</div>
-            <div class="stats">Position: C<br>Team: Denver Nuggets<br>3x MVP<br>2023 NBA Champion, Triple-Double Machine</div>
-        </div>
-    </div>
+
+<nav style="text-align: center; margin-bottom: 20px;">
+<a href="index.html"
+style="background: linear-gradient(45deg, #FF8C00, #FF4500);
+color: white;
+padding: 12px 24px;
+text-decoration: none;
+border-radius: 25px;
+font-weight: bold;
+box-shadow: 0 5px 15px rgba(255,140,0,0.4);
+display: inline-block;">
+← Back to Home
+</a>
+</nav>
+
+<header>
+<h1>Top Basketball Athletes</h1>
+</header>
+
+<div class="athletes-grid">
+
+<div class="athlete-card">
+<div class="image-placeholder lebron"></div>
+<div class="name">LeBron James</div>
+<div class="stats">Position: SF/PF<br>Team: LA Lakers<br>PPG Career: 27.1<br>4x NBA Champion, 4x MVP</div>
+</div>
+
+<div class="athlete-card">
+<div class="image-placeholder curry"></div>
+<div class="name">Stephen Curry</div>
+<div class="stats">Position: PG<br>Team: Golden State Warriors<br>3PT%: 42.6%<br>4x NBA Champion, 2x MVP</div>
+</div>
+
+<div class="athlete-card">
+<div class="image-placeholder kobe"></div>
+<div class="name">Kobe Bryant</div>
+<div class="stats">Position: SG<br>5x NBA Champion<br>PPG Career: 25.0<br>81-point game legend</div>
+</div>
+
+<div class="athlete-card">
+<div class="image-placeholder jordan"></div>
+<div class="name">Michael Jordan</div>
+<div class="stats">Position: SG<br>6x NBA Champion<br>5x MVP<br>GOAT Debate Leader</div>
+</div>
+
+<div class="athlete-card">
+<div class="image-placeholder durant"></div>
+<div class="name">Kevin Durant</div>
+<div class="stats">Position: SF<br>2x NBA Champion<br>1x MVP<br>4x Scoring Champ</div>
+</div>
+
+<div class="athlete-card">
+<div class="image-placeholder jokic"></div>
+<div class="name">Nikola Jokic</div>
+<div class="stats">Position: C<br>Denver Nuggets<br>3x MVP<br>Triple-Double Machine</div>
+</div>
+
+</div>
+
 </body>
 </html>
+```
+
